@@ -1,5 +1,7 @@
 .about {
     position: relative;
+    background: linear-gradient(180deg, #dcfaff, #ffffff, #ffffff);
+    
 
     .progress {
         position: sticky;
@@ -17,6 +19,7 @@
     }
 
     .container {
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -52,6 +55,7 @@
 
                 h2 {
                     font-size: 72px;
+                    color: #205aa0;
                 }
 
                 p {
