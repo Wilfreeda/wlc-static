@@ -51,7 +51,9 @@ const Hero = () => {
                 <motion.h2 variants={textVariants}>Be the best of yourself with WLC</motion.h2>
                 <motion.h1 variants={textVariants}>WE CARE,<br /> WE TRANSFORM</motion.h1>
                 <motion.div className="buttons" variants={textVariants}>
-                    <motion.button variants={textVariants}>Book a free Demo</motion.button>
+                    <a href="#Contact Us">
+                        <motion.button variants={textVariants}>Book a free Demo</motion.button>
+                    </a>
                 </motion.div>
                 <motion.img src="/scroll.png" alt="" variants={textVariants} animate="scrollButton" />
             </motion.div>
