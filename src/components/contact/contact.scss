@@ -1,12 +1,20 @@
+@import '../../app.scss';
+
 .contact {
     height: 100%;
     max-width: 1366px;
-    // background: linear-gradient(180deg, #dcfaff, #ffffff, #ffffff);
     margin: auto;
     display: flex;
     align-items: center;
     // justify-content: space-between;
     gap: 50px;
+
+    @include mobile {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
 
     .textContainer {
         flex: 1;
@@ -14,10 +22,21 @@
         flex-direction: column;
         gap: 40px;
 
+        @include mobile {
+            gap: 20px;
+            text-align: center;
+            align-items: center;
+            margin-top: 70px;
+        }
+
         h1 {
             font-size: 100px;
             line-height: 88px;
             color: #205aa0;
+
+            @include mobile {
+                font-size: 36px;
+            }
         }
 
         h2 {
@@ -33,12 +52,21 @@
         flex: 1;
         position: relative;
 
+        @include mobile {
+            padding: 50px;
+            width: 100%;
+        }
+
         .mailSVG {
 
             stroke: #205aa0;
             position: absolute;
             margin: auto;
             z-index: -1;
+
+            @include mobile {
+                display: none;
+            }
         }
 
         form {
@@ -46,12 +74,19 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+
+    
             
             input, textarea {
                 padding: 20px;
                 background-color: transparent;
                 border: 1px solid #205aa0;
                 border-radius: 5px;
+
+                @include mobile {
+                    padding: 10px;
+
+                }
             }
 
             button {
@@ -61,6 +96,10 @@
                 cursor: pointer;
                 font-weight: 500;
                 color: white;
+
+                @include mobile {
+                    padding: 10px;
+                }
             }
         }
     }

@@ -1,3 +1,5 @@
+@import '../../app.scss';
+
 .service {
     background: linear-gradient(180deg, #dcfaff, #ffffff, #ffffff);
     height: 100%;
@@ -7,6 +9,11 @@
     align-items: center;
     margin: auto;
     overflow: hidden;
+
+    @include mobile {
+        display: none;
+        top: -100px;
+    }
 
     .titleContainer {
         // flex: 1;
